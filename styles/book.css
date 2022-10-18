@@ -1,0 +1,92 @@
+/*===== Search Results =====*/
+.search_results_wrapper {
+    max-width: 1280px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.search_results_container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+/* >>>>>>>>>>>>>>>>> --Friend Book Start-- >>>>>>>>>>>>>>>>>  */
+.friend_book {
+    padding: 15px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.friend_book h2 {
+    color: #4f5050;
+    padding-bottom: 20px;
+}
+.friend_contents_book {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.friend_content_book {
+    box-shadow: 0 0 10px #cdc9c9;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.friend_content_book img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    cursor: pointer;
+}
+.friend_data_book {
+    padding: 10px;
+}
+.friend_data_book h3{
+    font-weight: 600;
+}
+.friend_data_book p{
+    font-size: 14px;
+}
+.btn_book {
+    background: #83c6c9;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.Friend_all_book{
+    text-align: center;
+    padding-top: 10px;
+    color: #5dd0d6;
+    background-color: white;
+    cursor: pointer;
+}
+/* <<<<<<<<<<<<<<<<< --friend book end-- <<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>> --Responsive-- >>>>>>>>>>>>>>>>>  */
+@media screen and (max-width: 992px){
+    .friend_contents_book {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .friend_contents_book {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .friend_book {
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .friend_contents_book {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

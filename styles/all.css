@@ -1,0 +1,14 @@
+/*===== Search Results =====*/
+.search_results_wrapper {
+    max-width: 1280px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.search_results_container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
