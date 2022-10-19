@@ -18,12 +18,17 @@
 .news {
     margin: 30px 0;
     max-width: 685px;
+    margin-left: 30px;
 }
 .card_news {
     background-color: white;
-    padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 25px;
 }
 .img_news {
     max-height: 120px;
@@ -33,18 +38,16 @@
 }
 .link_news {
     margin-bottom: 15px;
-    display: flex;
 }
-.link_news img{
-    display: none;
-}
-.link_news h3 {
+.link_news div {
     color: #0000ffad;
     font-weight: 500;
+    font-size: 20px;
 }
 .dtl_news {
     display: grid;
     grid-template-columns: auto auto;
+    align-items: center;
 }
 .dtl_news p {
     font-size: 14px;
@@ -52,20 +55,26 @@
 /* <<<<<<<<<<<<<<<<< --friend book end-- <<<<<<<<<<<<<<<<< */
 
 /* >>>>>>>>>>>>>>>>> --Responsive-- >>>>>>>>>>>>>>>>>  */
-@media screen and (max-width: 992px){
-}
-
 @media screen and (max-width: 768px){
-    .dtl_news{
+    .news {
+        margin-left: 0px;
+    }
+    .img_news {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 576px){
+    .card_news {
+        flex-direction: row;
+    }
+    .img_news {
+        max-height: 100px;
+        width: 130px;
+    }
+    .dtl_news p{
         display: none;
     }
-    .link_news img{
-        display: block;
+    .link_news span, .link_news div{
+        font-size: 15px;
     }
-}
-
-@media screen and (max-width: 576px){
-    .link_news img{
-    display: none;
-}
 }
