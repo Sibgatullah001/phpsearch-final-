@@ -49,13 +49,27 @@
     font-size: 14px;
 }
 .btn_book {
-    background: #83c6c9;
     text-align: center;
     margin: 5px 0;
     padding: 5px 0;
     border-radius: 5px;
-    color: white;
+    font-weight: 500;
     cursor: pointer;
+    transition: .5s;
+}
+.btn_confirm_book {
+    background-color: #71dbcaa1;
+    color: #3030d5;
+}
+.btn_confirm_book:hover {
+    background-color: #53bbaaa1;
+}
+.btn_Delete_book {
+    background-color: #a7a7a7ab;
+    color: black;
+}
+.btn_Delete_book:hover {
+    background-color: #878585ab;
 }
 .Friend_all_book{
     text-align: center;
