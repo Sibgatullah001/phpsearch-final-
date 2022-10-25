@@ -382,9 +382,12 @@ body {
         position: relative;
     }
 
-    .settings_icon_mobile {
+    .settings_icons_mobile {
         position: absolute;
         right: 1rem;
+        display: flex;
+    }
+    .settings_icon_mobile {
         display: block;
     }
 
